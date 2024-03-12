@@ -1,9 +1,9 @@
-# PWM LED 呼吸灯实现
+# PWM LED breathing light implementation
 
-## 介绍
-使用 Verilog 实现的呼吸灯模块。该模块通过改变 LED 的亮度来模拟呼吸灯的效果。实现原理是使用计数器来控制 LED 的亮度变化速度。
+## introduce
+Breathing light module implemented using Verilog. This module simulates the effect of a breathing light by changing the brightness of the LED. The implementation principle is to use a counter to control the brightness change speed of the LED.
 
-## Verilog 代码
+##Verilog code
 
 ```verilog
 module pwm_LED(
@@ -75,3 +75,12 @@ always @(*) begin
 end
 
 endmodule
+
+## Pin assignment
+clk	 Input	PIN_AF14
+led	 Output	PIN_AB23
+rst_n	Input	PIN_AJ4
+
+
+
+
